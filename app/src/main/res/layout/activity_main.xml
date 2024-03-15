@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <Spinner
+        android:id="@+id/spinnerFromCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spinnerToCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerFromCurrency"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerToCurrency"
+        android:layout_marginTop="20dp"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAmount"
+        android:layout_marginTop="24dp"
+        android:text="Convert"
+        android:background="#FF6200EE"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonConvert"
+        android:layout_marginTop="20dp"
+        android:hint="Result"
+        android:editable="false"
+        android:padding="12dp"
+        android:background="#F0F0F0"
+        android:inputType="numberDecimal"/>
+</RelativeLayout>
